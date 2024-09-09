@@ -49,7 +49,7 @@ COPY run /source/etc/s6-overlay/s6-rc.d/svc-plex/
 
 FROM scratch
 
-#ENV LIBVA_DRIVERS_PATH="/vaapi-amdgpu/lib/dri" \
+ENV LIBVA_DRIVERS_PATH="/vaapi-amdgpu/lib/dri" \
 
 COPY --from=source "/source/" "/"
 
